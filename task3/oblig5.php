@@ -95,7 +95,6 @@ $sql = "INSERT INTO club(ID) VALUES(:ID)";
 					
 						foreach( $Logs as $Log)
 						{
-
 							
 							$Entries=$Log->getElementsByTagName("Entry");
 							           foreach( $Entries as $Entry)
@@ -114,9 +113,6 @@ $sql = "INSERT INTO club(ID) VALUES(:ID)";
                 		               		$query = $db->prepare($sql);                  
                  			           		$query->execute(array(":seasonyear"=>$fallyear, ":skierusername"=>$skierusername, ":logdate"=>$Date, ":distance"=>$Distance, ":area"=>$Area));
 							        
-           											If($skierusername=='andr_stee' && $fallyear==2015)
-           											{echo "$total_distance \n";}
-                            			          	; 	
          
 							           }
 
